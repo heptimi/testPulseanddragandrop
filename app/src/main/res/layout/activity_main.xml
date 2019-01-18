@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/yellowLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vibration_black_24dp" />
+
+            <ImageView
+                android:id="@+id/ivColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cloud_black_24dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#6495ED"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ADD8E6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<com.sdsmdg.harjot.vectormaster.VectorMasterView-->
+            <!--android:id="@+id/pulseCircle"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--app:vector_src="@drawable/ic_brightness_1_black_24dp" />-->
+
+        <com.gigamole.library.PulseView
+            android:id= "@+id/pv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pv_alpha= "70"
+            app:pv_color="#4682B4"
+            app:pv_icon="@drawable/ic_brightness_1_black_24dp"
+            app:pv_icon_height="50dp"
+            app:pv_icon_width="50dp"
+            app:pv_measure="height"
+            app:pv_interpolator="@android:anim/linear_interpolator"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
